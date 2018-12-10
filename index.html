@@ -1,0 +1,180 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Venue Website Draft</title>
+    <!--
+      Need to add Google Analytics and tag manager and site verification when done
+    -->
+
+    <!-- <link rel="canonical" href="website url" /> -->
+    <!-- <meta property='og:title' href=' Mesa name of location' /> -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <!-- <meta property='og:description' content='to be filled out later' /> -->
+    <!-- <meta property='og:url' content='url' /> -->
+    <!-- <meta property='og:site_name' content='Name of building' -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- <meta property='og:image' content='' -->
+    <!--
+      <meta name='twitter:image:alt' content='Alth text for image if not working'
+    -->
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <!-- <link rel="shortlink" href="website name" /> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+
+        <header class="header">
+            <div class="header__logo-box">
+                <img src="assets/img/ens-az-logo.jpg" alt="Logo" class="header__logo">
+            </div>
+
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">The View at 55th</span>
+                    <span class="heading-primary--sub">is where life happens</span>
+                </h1>
+
+                <a href="gallery.html" class="btn btn--white btn--animated">Learn more &rArr;</a>
+            </div>
+        </header>
+
+      <section class="section-about">
+        <!--
+          In here will be img gallery of location, location details and think of other things idea look at notes
+        -->
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">We provide the space for your masterpiece</h2>
+          <div class="row" id='window_view'>
+            <div class="col-1-of-2" id='heading_1'>Commitment to exellence</div>
+            <div class="col-1-of-2" id='heading_2'>Stunning Design</div>
+            <div class="col-1-of-2" id='heading_3'>Inviting Spaces</div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        might want better naming will be section with what type of events can be here
+      -->
+      <section class="section-events">
+        <!--
+          In here will be examples of what types of events the venue can host eg weddings ect
+        -->
+        <!--
+          research what is being marketed in other venues for what they can hold
+        -->
+        <div class="row">
+          <div class="col-1-of-2" id='wedding'><h1 class ='events_text'>Weddings</h1></div>
+          <div class="col-1-of-2" id='meeting'><h1 id='rotate-90'>Meetings</h1></div>
+        </div>
+        <div class="row">
+          <div class="col-1-of-2" id='training'><h1 class ='events_text'>Training</h1></div>
+          <div class="col-1-of-2" id='social'><h1 class ='events_text'>Social Gatherings</h1></div>
+        </div>
+      </section>
+
+      <section class="section-stories">
+        <!--
+          Get some testamonies from people who have used event ex. Anne and Larry
+        -->
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class='heading-secondary'>
+            We Prove the space for you to innovate!
+          </h2>
+        </div>
+
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+                <img src="assets/img/larry.jpg" alt="Person on a tour" class="story__img">
+              <figcaption class='story__caption'>Potthoff</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class='heading-tertiary u-margin-bottom-small'>My industry meeting was a huge success!</h3>
+              <p>
+                Insert testamony here for the ens event
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="story">
+              <figure class="story__shape">
+                  <img src="assets/img/larry.jpg" alt="Person on a tour" class="story__img">
+                <figcaption class='story__caption'>Potthoff</figcaption>
+              </figure>
+              <div class="story__text">
+                <h3 class='heading-tertiary u-margin-bottom-small'>My wedding here was a wonderland!</h3>
+                <p>
+                  Insert testamony here for the wedding
+                </p>
+              </div>
+            </div>
+          </div>
+
+        <!-- Will have link to social media here -->
+        <div class="u-center-text u-margin-bottom-big">
+            <a href="#" class="btn-text">See more testamonies &rarr;</a>
+        </div>
+      </section>
+
+      <section class="section-book">
+        <!--
+          Section to request a booking will have dynamic info field with calander for dates and will generate email to relevant person for booking
+        -->
+        <div id="form-box">
+          <i id="prev-btn" class="fas fa-arrow-left"></i><i id='cal-btn' class="far fa-calendar-alt"></i>
+          <i id="next-btn" class="fas fa-arrow-right"></i>
+          <div id="input-group">
+            <input id="input-field" required /> <label id="input-label"></label>
+            <div id="input-progress"></div>
+          </div>
+          <div id="progress-bar"></div>
+        </div>
+      </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <!-- <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo"> -->
+    </div>
+    <div class="row">
+        <div class="col-1-of-2">
+            <div class="footer__navigation">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="https://www.ens-az.com/" class="footer__link">Company</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-1-of-2">
+            <p class="footer__copyright">
+                The Venue at 55th 
+                <br>
+                Call us at: (480)505-1111 
+                <br>
+                Or email us at: thevenue@ens.com
+            </p>
+        </div>
+    </div>
+    </footer>
+    <!--
+      this will be the arrow which will scroll the user to the top of the screen
+    -->
+    <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+#window_view {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)),
+    url(../img/view_2.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 100%;
+    max-width:100%;
+}
+
+#meeting {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)),
+    url(../img/ens_event/main_ens.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 100%;
+    max-width:100%;
+    transform: rotate(90deg);
+}
+
+#wedding {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)),
+    url(../img/wedding_ex.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    top: 5px;
+    height: 98%;
+    max-width:100%;
+}
+
+#training {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)),
+    url(../img/wedding_ex.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    top: 5px;
+    height: 98%;
+    max-width:100%;
+}
+
+#social {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)),
+    url(../img/wedding_ex.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    top: 5px;
+    height: 98%;
+    max-width:100%;
+}

@@ -1,0 +1,14 @@
+.section-landing {
+  background-image: url(../../img/front_page.JPG);
+  
+  background-size: cover;
+
+}
+
+.section-book {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+}
