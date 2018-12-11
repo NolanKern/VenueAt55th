@@ -96,15 +96,27 @@ body {
     font-family: 'Lobster', cursive;
 }
 
-#rotate-90 {
+.rotate-90 {
     transform: rotate(-90deg);
+    color: whitesmoke;
+    font-family: 'Lobster', cursive;
+}
+
+#meetings-text {
     position: absolute;
     top: 45%;
     left: 0%;
     font-size: 2.6rem;
+}
+
+.events-paragraph {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 50%;
+    left:13%;
     color: whitesmoke;
     font-family: 'Lobster', cursive;
-
+    text-align: center;
 }
 
 .events_text {
