@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Venue Website Draft</title>
+    <title>Venue at 55th</title>
     <!--
       Need to add Google Analytics and tag manager and site verification when done
     -->
@@ -20,6 +20,9 @@
     <!--
       <meta name='twitter:image:alt' content='Alth text for image if not working'
     -->
+    <meta name='title' content='The Venue At 55th'>
+    <meta name='description' content='The Venue at 55th offers a beautiful and dynamic space for all of your events.'>
+    <meta name='keywords' content='Venue | Phoenix Valley Area | Weddings | Buisness Meetings | Social Gatherings | Education space | Rehersal Dinner | Mixers | Small shows | equipment provided'>
 
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <!-- <link rel="shortlink" href="website name" /> -->
@@ -40,8 +43,8 @@
 
             <div class="header__text-box">
                 <h1 class="heading-primary">
-                    <span class="heading-primary--main">The View at 55th</span>
-                    <span class="heading-primary--sub">is where life happens</span>
+                    <span class="heading-primary--main">The View at 55<sup>th</sup></span>
+                    <span class="heading-primary--sub">The New Venue</span>
                 </h1>
 
                 <a href="gallery.html" class="btn btn--white btn--animated">Learn more &rArr;</a>
@@ -49,9 +52,6 @@
         </header>
 
       <section class="section-about">
-        <!--
-          In here will be img gallery of location, location details and think of other things idea look at notes
-        -->
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">We provide the space for your masterpiece</h2>
           <div class="row" id='window_view'>
@@ -62,16 +62,7 @@
         </div>
       </section>
 
-      <!--
-        might want better naming will be section with what type of events can be here
-      -->
       <section class="section-events">
-        <!--
-          In here will be examples of what types of events the venue can host eg weddings ect
-        -->
-        <!--
-          research what is being marketed in other venues for what they can hold
-        -->
         <div class="row">
           <div class="col-1-of-2" id='wedding'><h1 class ='events_text'>Weddings</h1>
           <p class='events-paragraph'>The Venue At 55th offers an elegant and contemporary space for the<br> wedding of your dreams.</p></div>
@@ -83,6 +74,86 @@
             <p class='events-paragraph'>We can support you in crafting your events. From multi-day training&nbsp; <br> sessions to short classes we will ensure that you have the space and <br> equipment that you need.</p></div>
           <div class="col-1-of-2" id='social'><h1 class ='events_text'>Social Gatherings</h1>
             <p class='events-paragraph'>We welcome any type of social gathering. With our gorgeous space<br> we will help you acheive your vision.</p></div>
+        </div>
+      </section>
+
+
+      <section class='section-features'>
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">
+              Venue Amenities and Features
+          </h2>
+      </div>
+
+
+        <div class="row">
+          <div class="col-1-of-2">
+             <div class="card">
+                 <div class="card__side card__side--front">
+                      <div class="card__picture card__picture--1">
+                          &nbsp;
+                      </div>
+                      <h4 class="card__heading">
+                          <span class="card__heading-span card__heading-span--1">Included Event Equipment</span>
+                      </h4>
+                      <div class="card__details">
+                          <ul>
+                              <li>Tables</li>
+                              <li>Chairs</li>
+                              <li>Table Cloths</li>
+                              <li>Reidel Red and White Wine Glasses</li>
+                              <li>Water Glasses</li>
+                              <li>Kitchen with 2 refrigerators</li>
+                              <li>RO water</li>
+                              <li>Bar</li>
+                              <li>Stage</li>
+                          </ul>
+                      </div>
+                 </div>
+                 <div class="card__side card__side--back card__side--back-1">
+                      <div class="card__cta">
+                          <div class="card__price-box">
+                              <p class="card__price-value">Contact us for more information!</p>
+                          </div>
+                          <a href="#popup" class="btn btn--white btn--contact">Contact Us!</a>
+                      </div>
+                  </div>
+             </div>
+          </div>
+
+
+          <div class="col-1-of-2">
+              <div class="card">
+                  <div class="card__side card__side--front">
+                      <div class="card__picture card__picture--2">
+                          &nbsp;
+                      </div>
+                      <h4 class="card__heading">
+                          <span class="card__heading-span card__heading-span--2">Facility Features</span>
+                      </h4>
+                      <div class="card__details">
+                          <ul>
+                              <li>Dimmable light</li>
+                              <li>10 HVAC Units</li>
+                              <li>Decorative Fountain</li>
+                              <li>40' Redwood Ceiling</li>
+                              <li>32' by 60' View of Red Mountain</li>
+                              <li>Large decorative fan</li>
+                              <li>Four seperate bathrooms</li>
+                          </ul>
+                      </div>
+
+                  </div>
+                  <div class="card__side card__side--back card__side--back-2">
+                    <div class="card__cta">
+                      <div class="card__price-box">
+                          <p class="card__price-value">Contact us for more information!</p>
+                      </div>
+                      <a href="#popup" class="btn btn--white btn--contact">Contact Us!</a>
+                  </div>
+                  </div>
+              </div>
+          </div>
         </div>
       </section>
 
@@ -136,7 +207,7 @@
         <!--
           Section to request a booking will have dynamic info field with calander for dates and will generate email to relevant person for booking
         -->
-        <div id="form-box">
+        <div id="form-box" action='/send-mail' method='post'>
           <i id="prev-btn" class="fas fa-arrow-left"></i><i id='cal-btn' class="far fa-calendar-alt"></i>
           <i id="next-btn" class="fas fa-arrow-right"></i>
           <div id="input-group">
@@ -154,17 +225,22 @@
         <!-- <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo"> -->
     </div>
     <div class="row">
-        <div class="col-1-of-2">
+        <div class="col-1-of-3">
             <div class="footer__navigation">
                 <ul class="footer__list">
                     <li class="footer__item"><a href="https://www.ens-az.com/" class="footer__link">Company</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link btn--contact">Contact us</a></li>
                 </ul>
             </div>
         </div>
-        <div class="col-1-of-2">
+        <div class="col-1-of-3">
+          <ul>
+            <li class='footer__icon'><a href="https://www.facebook.com/venue8600/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li class='footer__icon'><a href="https://www.yelp.com/biz/venue-8600-scottsdale" target="_blank"><i class="fab fa-yelp"></i></a></li>
+            <li class='footer__icon'><a href="https://www.google.com/maps/place/3633+N+55th+Pl,+Mesa,+AZ+85215/@33.4816949,-111.7124397,17z/data=!4m13!1m7!3m6!1s0x872ba4f7027ea9ed:0xe26065de3b01e0a5!2s3633+N+55th+Pl,+Mesa,+AZ+85215!3b1!8m2!3d33.4816949!4d-111.710251!3m4!1s0x872ba4f7027ea9ed:0xe26065de3b01e0a5!8m2!3d33.4816949!4d-111.710251" target="_blank"><i class="fas fa-map"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-1-of-3">
             <p class="footer__copyright">
                 The Venue at 55th 
                 <br>

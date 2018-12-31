@@ -1,7 +1,7 @@
 // Questions Array
 const questions = [
   { question: 'Enter Your Name' },
-  { question: 'Enter Your Email', pattern: /\S+@\S+\.\S+/ },
+  { question: 'Enter Your Preferred Contact Email', pattern: /\S+@\S+\.\S+/ },
   { question: 'What Type Of Event Would You Be Hosting' },
   {
     question: "Please Select A Date For Your Event",
@@ -193,6 +193,8 @@ function formComplete() {
     formBox.parentElement.appendChild(h1);
     setTimeout(() => (h1.style.opacity = 1), 50);
   }, 1000);
+
+  window.location.href = 'mailto:thevenue@ens.com?subject=Venue Booking Request '+ questions[3].answer + '&body=From '+ questions[0].answer + ', %0D%0A I would like to enquire about hosting a ' + questions[2].answer + ' event on '+ questions[3].answer + '. ' + questions[4].answer + '. %0D%0A With Regards, %0D%0A '+ questions[0].answer;
 }
 
 // NEED TO CREATE FUNCTION TO SEND EMAIL USING ANSWERS FROM QUESTIONS[I].ANSWERS AND ITTERATE THROUGH
@@ -217,4 +219,10 @@ $(document).ready(function() {
       return false;
   });
 
+});
+
+$(".btn--contact").click(function() {
+  $([document.documentElement, document.body]).animate({
+      scrollTop: $(".section-book").offset().top
+  }, 2000);
 });
