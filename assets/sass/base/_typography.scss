@@ -19,7 +19,7 @@ body {
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
-
+    color: skyblue;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -32,9 +32,9 @@ body {
 
   &--sub {
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    letter-spacing: 1.75rem;
+    color:crimson;
     animation: moveInRight 1s ease-out;
   }
 }
@@ -111,6 +111,7 @@ body {
   top: 45%;
   left: 0%;
   font-size: 2.6rem;
+  color: $color-primary;
 }
 
 .events-paragraph {
@@ -128,7 +129,7 @@ body {
   top: 5%;
   left: 40%;
   font-size: 2.6rem;
-  color: whitesmoke;
+  color: $color-primary;
   font-family: "Lobster", cursive;
 }
 

@@ -27,6 +27,9 @@
     &__item {
         display: inline-block;
 
+        &:first-child {
+            margin-left: 1.5rem;
+        }
         &:not(:last-child) {
             margin-right: 1.5rem;
         }

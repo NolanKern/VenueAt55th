@@ -4,10 +4,10 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 70rem;
+    height: 75rem;
     
     &__side {
-        height: 68rem;
+        height: 72rem;
         transition: all .8s ease;
         position: absolute;
         top: 0;
@@ -60,12 +60,12 @@
         border-top-right-radius: 3px;
         
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
+            background-image:  
             url(../img/normal/1.jpg);
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
+            background-image: 
             url(../img/normal/6.jpg);
         }
     }
