@@ -26,4 +26,13 @@
         color: $color-primary;
 
     }
+
+    &__btn--align {
+        position: absolute;
+        top: 90%;
+        left:50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
 }
+

@@ -637,6 +637,12 @@ sup {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #428bca; }
+  .header__btn--align {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%); }
 
 #window_view {
   background-image: url(../img/normal/11.jpg);
