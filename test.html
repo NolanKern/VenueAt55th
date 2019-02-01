@@ -10,25 +10,101 @@
       integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/test.css" />
-    <title>Fancy Form</title>
   </head>
 
   <body>
-    <div id="container">
-      <h1 class="logo">Fancy Form</h1>
-      <div id="form-box">
-        <i id="prev-btn" class="fas fa-arrow-left"></i>
-        <i id="next-btn" class="fas fa-arrow-right"></i>
-        <div id="input-group">
-          <input id="input-field" required /> <label id="input-label"></label>
-          <div id="input-progress"></div>
+    <header>
+      <div class="container">
+        <!-- <h1 class="logo"></h1> -->
+        <div class="name">The View At 55th</div>
+        <div class="nav_container">
+          <nav>
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu1">Weddings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu2"
+                  >Receptions</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu3"
+                  >Coporate Events</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu4"
+                  >Coporate Training</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu5"
+                  >Ammenities</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu6"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div id="progress-bar"></div>
       </div>
+    </header>
+    <div class="tab-content">
+      <div class="tab-pane container " id="home" style="color:aliceblue;">
+        <div class="w3-row-padding">
+          <div class="w3-container w3-third">
+            <img
+              src="img_snowtops.jpg"
+              style="width:100%"
+              onclick="onClick(this)"
+            />
+          </div>
+          <div class="w3-container w3-third">
+            <img
+              src="img_lights.jpg"
+              style="width:100%"
+              onclick="onClick(this)"
+            />
+          </div>
+          <div class="w3-container w3-third">
+            <img
+              src="img_mountains.jpg"
+              style="width:100%"
+              onclick="onClick(this)"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane container fade" id="menu1">Weddings</div>
+      <div class="tab-pane container fade" id="menu2">...</div>
     </div>
 
-    <script src="assets/js/main.js"></script>
+    <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+      <img class="w3-modal-content" id="img01" style="width:100%" />
+    </div>
+    <script>
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+      }
+    </script>
   </body>
 </html>

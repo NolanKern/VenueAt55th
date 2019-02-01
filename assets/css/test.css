@@ -1,26 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two");
 body {
-    background: #428bca;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-  }
-  
-  h1.logo {
-    color: #fff;
-    font-family: 'Pacifico', cursive;
-    font-size: 4em;
-  }
-  
-  h1.end {
-    position: relative;
-    color: #fff;
-    opacity: 0;
-    transition: 0.8s ease-in-out;
-  }
-  
-  #container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: top;
-    align-items: center;
-  }
+  margin: 0;
+  background: #222;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  /* grid-template-rows: 10% 80%; */
+}
+
+header {
+  background: #55d6aa;
+  padding-bottom: 10px;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  /* padding: 25px 0; */
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 0px;
+  /* padding-top: 20px; */
+  position: relative;
+}
+
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  bottom: -5px;
+  left:0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.name {
+  display: grid;
+  float: left;
+  font-family: "Lobster Two", cursive;
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.tab-content {
+  background-color: aqua;
+}
