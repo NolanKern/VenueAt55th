@@ -172,3 +172,9 @@ nav a:hover::before {
 .tab-content {
   background-color: aqua;
 }
+
+.column img {
+  height:100px;
+  width:100px;
+  float:left;
+}
