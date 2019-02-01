@@ -620,7 +620,7 @@ sup {
 
 .header {
   height: 95vh;
-  background-image: url(../img/normal/front_page.JPG);
+  background-image: url(../img/normal/front_page.jpg);
   background-size: cover;
   background-position: top;
   position: relative; }
@@ -800,7 +800,7 @@ sup {
   transform: rotate(-135deg); }
 
 .section-landing {
-  background-image: url(../../img/front_page.JPG);
+  background-image: url(../../img/front_page.jpg);
   background-size: cover; }
 
 .section-book {
