@@ -6,7 +6,8 @@
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
-@import "base/media";
+@import "base/tooltips";
+
 
 @import "components/button";
 @import "components/form";
@@ -27,3 +28,5 @@
 
 @import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto');
 @import url('https://fonts.googleapis.com/css?family=Lobster');
+
+@import "base/media";

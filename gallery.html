@@ -1,39 +1,114 @@
 <!DOCTYPE html>
 <html>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/test.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/css/gallery.css" />
   <link
     href="https://fonts.googleapis.com/css?family=Lobster"
     rel="stylesheet"
   />
   <body>
+    <div class="navigation">
+      <header class='size__control'>
+        <div class="container">
+          <!-- <h1 class="logo"></h1> -->
+          <div class="name">The View At 55th</div>
+          <div class="nav_container">
+            <nav>
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class='nav-link' href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#menu1">Weddings</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#menu2"
+                    >Receptions</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#menu3"
+                    >Coporate Events</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#menu5"
+                    >Ammenities</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#menu4"
+                    >Coporate Training</a
+                  >
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#menu6"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="tab-content u-margin-bottom-small size__control">
+        <div class="tab-pane container size-control" id="home" style="color:aliceblue;">
+          <!-- Thumbnail images -->
+          <div class="row gallery">
+            <div class="column">
+              <img
+                class="democursor"
+                src="./assets/img/normal/1.jpg"
+                alt="The Woods"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="democursor"
+                src="./assets/img/normal/1.jpg"
+                alt="Cinque Terre"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="democursor"
+                src="./assets/img/normal/1.jpg"
+                alt="Mountains and fjords"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="democursor"
+                src="./assets/img/normal/1.jpg"
+                alt="Northern Lights"
+              />
+            </div>
 
-      <div class="navigation">
-          <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
-          <label for="navi-toggle" class="navigation__button">
-              <span class="navigation__icon">&nbsp;</span>
-          </label>
-
-          <div class="navigation__background">&nbsp;</div>
-
-          <nav class="navigation__nav">
-              <ul class="navigation__list">
-                  <li class="navigation__item"><a href="./index.html" class="navigation__link"><span>01</span>Home</a></li>
-                  <li class="navigation__item"><a href="./gallery.html" class="navigation__link"><span>02</span>Photo Gallery</a></li>
-                  <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Features</a></li>
-                  <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Testamonials</a></li>
-                  <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Contact Us</a></li>
-                  </ul>
-          </nav>
+          </div>
+        </div>
+        <div class="tab-pane container fade" id="menu1">Weddings</div>
+        <div class="tab-pane container fade" id="menu2">...</div>
       </div>
+    </div>
+    </div>
 
-      
-    <h2 style="text-align:center">
-        <span>Image Gallery</span>
-    </h2>
+    <h2 class='u-margin-top-huge' style="text-align:center"><span>Image Gallery</span></h2>
 
-    <div class="row">
+    <div class="row gallery">
       <div class="column">
         <img
           src="./assets/img/normal/1.jpg"
@@ -67,7 +142,7 @@
         />
       </div>
     </div>
-    <div class="row">
+    <div class="row gallery">
       <div class="column">
         <img
           src="./assets/img/normal/5.jpg"
@@ -94,19 +169,19 @@
       </div>
       <div class="column">
         <img
-          src="./assets/img/normal/15.jpg"
+          src="./assets/img/normal/8.jpg"
           style="width:100%"
-          onclick="openModal();currentSlide(15)"
+          onclick="openModal();currentSlide(8)"
           class="hover-shadow cursor"
         />
       </div>
     </div>
-    <div class="row">
+    <div class="row gallery">
       <div class="column">
         <img
           src="./assets/img/normal/9.jpg"
           style="width:100%"
-          onclick="openModal();currentSlide(1)"
+          onclick="openModal();currentSlide(9)"
           class="hover-shadow cursor"
         />
       </div>
@@ -114,7 +189,7 @@
         <img
           src="./assets/img/normal/10.jpg"
           style="width:100%"
-          onclick="openModal();currentSlide(1)"
+          onclick="openModal();currentSlide(10)"
           class="hover-shadow cursor"
         />
       </div>
@@ -122,7 +197,7 @@
         <img
           src="./assets/img/normal/11.jpg"
           style="width:100%"
-          onclick="openModal();currentSlide(1)"
+          onclick="openModal();currentSlide(11)"
           class="hover-shadow cursor"
         />
       </div>
@@ -130,17 +205,17 @@
         <img
           src="./assets/img/normal/12.jpg"
           style="width:100%"
-          onclick="openModal();currentSlide(1)"
+          onclick="openModal();currentSlide(12)"
           class="hover-shadow cursor"
         />
       </div>
     </div>
-    <div class="row">
+    <div class="row gallery">
       <div class="column">
         <img
           src="./assets/img/normal/13.jpg"
           style="width:100%"
-          onclick="openModal();currentSlide(1)"
+          onclick="openModal();currentSlide(13)"
           class="hover-shadow cursor"
         />
       </div>
@@ -148,7 +223,7 @@
         <img
           src="./assets/img/normal/14.jpg"
           style="width:100%"
-          onclick="openModal();currentSlide(1)"
+          onclick="openModal();currentSlide(14)"
           class="hover-shadow cursor"
         />
       </div>
@@ -156,7 +231,7 @@
         <img
           src="./assets/img/normal/15.jpg"
           style="width:100%"
-          onclick="openModal();currentSlide(1)"
+          onclick="openModal();currentSlide(15)"
           class="hover-shadow cursor"
         />
       </div>
@@ -164,89 +239,364 @@
         <img
           src="./assets/img/normal/15.jpg"
           style="width:100%"
-          onclick="openModal();currentSlide(1)"
+          onclick="openModal();currentSlide(16)"
           class="hover-shadow cursor"
         />
       </div>
     </div>
+    <div class="row gallery">
+      <div class="column">
+        <img
+          src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-186.jpg"
+          style="width:100%"
+          onclick="openModal();currentSlide(17)"
+          class="hover-shadow cursor"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-187.jpg"
+          style="width:100%"
+          onclick="openModal();currentSlide(18)"
+          class="hover-shadow cursor"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-196.jpg"
+          style="width:100%"
+          onclick="openModal();currentSlide(19)"
+          class="hover-shadow cursor"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-199.jpg"
+          style="width:100%"
+          onclick="openModal();currentSlide(20)"
+          class="hover-shadow cursor"
+        />
+      </div>
+    </div>
+    <div class="row gallery">
+      <div class="column">
+        <img
+          src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-200.jpg"
+          style="width:100%"
+          onclick="openModal();currentSlide(21)"
+          class="hover-shadow cursor"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-332.jpg"
+          style="width:100%"
+          onclick="openModal();currentSlide(22)"
+          class="hover-shadow cursor"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-437.jpg"
+          style="width:100%"
+          onclick="openModal();currentSlide(23)"
+          class="hover-shadow cursor"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-530.jpg"
+          style="width:100%"
+          onclick="openModal();currentSlide(24)"
+          class="hover-shadow cursor"
+        />
+      </div>
+    </div>
+    <div class="row gallery">
+
+    
+      <div class="column">
+        <img
+          src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-535 (1).jpg"
+          style="width:100%"
+          onclick="openModal();currentSlide(25)"
+          class="hover-shadow cursor"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-555.jpg"
+          style="width:100%"
+          onclick="openModal();currentSlide(33)"
+          class="hover-shadow cursor"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-126.jpg"
+          style="width:100%"
+          onclick="openModal();currentSlide(26)"
+          class="hover-shadow cursor"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-208.jpg"
+          style="width:100%"
+          onclick="openModal();currentSlide(27)"
+          class="hover-shadow cursor"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="row gallery">
+    <div class="column">
+      <img
+        src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-323.jpg"
+        style="width:100%"
+        onclick="openModal();currentSlide(28)"
+        class="hover-shadow cursor"
+      />
+    </div>
+    <div class="column">
+      <img
+        src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-324.jpg"
+        style="width:100%"
+        onclick="openModal();currentSlide(29)"
+        class="hover-shadow cursor"
+      />
+    </div>
+    <div class="column">
+      <img
+        src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-459.jpg"
+        style="width:100%"
+        onclick="openModal();currentSlide(30)"
+        class="hover-shadow cursor"
+      />
+    </div>
+    <div class="column">
+      <img
+        src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-502.jpg"
+        style="width:100%"
+        onclick="openModal();currentSlide(31)"
+        class="hover-shadow cursor"
+      />
+    </div>
+  </div>
+  <div class="row gallery">
+    <div class="column">
+      <img
+        src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-547.jpg"
+        style="width:100%"
+        onclick="openModal();currentSlide(33)"
+        class="hover-shadow cursor"
+      />
+    </div>
+  </div>
+
+
+
+  <!-- Start of Modal -->
     <div id="myModal" class="modal">
       <span class="close cursor" onclick="closeModal()">&times;</span>
       <div class="modal-content">
         <div class="mySlides">
-          <div class="numbertext">1 / 15</div>
+          <div class="numbertext">1 / 33</div>
           <img src="./assets/img/normal/1.jpg" style="width:100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">2 / 15</div>
+          <div class="numbertext">2 / 33</div>
           <img src="./assets/img/normal/2.jpg" style="width:100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">3 / 15</div>
+          <div class="numbertext">3 / 33</div>
           <img src="./assets/img/normal/3.jpg" style="width:100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">4 / 15</div>
+          <div class="numbertext">4 / 33</div>
           <img src="./assets/img/normal/4.jpg" style="width:100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">5 / 15</div>
+          <div class="numbertext">5 / 33</div>
           <img src="./assets/img/normal/5.jpg" style="width:100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">6 / 15</div>
+          <div class="numbertext">6 / 33</div>
           <img src="./assets/img/normal/6.jpg" style="width:100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">7 / 15</div>
+          <div class="numbertext">7 / 33</div>
           <img src="./assets/img/normal/7.jpg" style="width:100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">8 / 15</div>
-          <img src="./assets/img/normal/15.jpg" style="width:100%" />
+          <div class="numbertext">8 / 33</div>
+          <img src="./assets/img/normal/8.jpg" style="width:100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">9 / 15</div>
+          <div class="numbertext">9 / 33</div>
           <img src="./assets/img/normal/9.jpg" style="width:100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">15 / 15</div>
+          <div class="numbertext">15 / 33</div>
           <img src="./assets/img/normal/10.jpg" style="width:100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">15 / 15</div>
+          <div class="numbertext">15 / 33</div>
           <img src="./assets/img/normal/11.jpg" style="width:100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">15 / 15</div>
+          <div class="numbertext">15 / 33</div>
           <img src="./assets/img/normal/12.jpg" style="width:100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">15 / 15</div>
+          <div class="numbertext">15 / 33</div>
           <img src="./assets/img/normal/13.jpg" style="width:100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">15 / 15</div>
+          <div class="numbertext">15 / 33</div>
           <img src="./assets/img/normal/14.jpg" style="width:100%" />
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">15 / 15</div>
+          <div class="numbertext">15 / 33</div>
           <img src="./assets/img/normal/15.jpg" style="width:100%" />
         </div>
-
+        
+        <div class="mySlides">
+          <div class="numbertext">16 / 33</div>
+          <img
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-186.jpg"
+            style="width:100%"
+          />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">17 / 33</div>
+          <img
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-187.jpg"
+            style="width:100%"
+          />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">18 / 33</div>
+          <img
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-196.jpg"
+            style="width:100%"
+          />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">19 / 33</div>
+          <img
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-199.jpg"
+            style="width:100%"
+          />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">20 / 33</div>
+          <img
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-200.jpg"
+            style="width:100%"
+          />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">21 / 33</div>
+          <img
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-332.jpg"
+            style="width:100%"
+          />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">22 / 33</div>
+          <img
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-437.jpg"
+            style="width:100%"
+          />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">23 / 33</div>
+          <img
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-530.jpg"
+            style="width:100%"
+          />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">24 / 33</div>
+          <img
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-535 (1).jpg"
+            style="width:100%"
+          />
+        </div>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">25 / 33</div>
+          <img
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-555.jpg"
+            style="width:100%"
+          />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">26 / 33</div>
+          <img
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-126.jpg"
+            style="width:100%"
+          />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">27 / 33</div>
+          <img
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-208.jpg"
+            style="width:100%"
+          />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">28 / 33</div>
+          <img
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-323.jpg"
+            style="width:100%"
+          />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">29 / 33</div>
+          <img
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-324.jpg"
+            style="width:100%"
+          />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">30 / 33</div>
+          <img
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-459.jpg"
+            style="width:100%"
+          />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">31 / 33</div>
+          <img
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-502.jpg"
+            style="width:100%"
+          />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">32 / 33</div>
+          <img
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-547.jpg"
+            style="width:100%"
+          />
+        </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -314,11 +664,246 @@
             class="demo cursor"
             src="./assets/img/normal/8.jpg"
             style="width:100%"
+            onclick="currentSlide(8)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/normal/9.jpg"
+            style="width:100%"
+            onclick="currentSlide(9)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/normal/10.jpg"
+            style="width:100%"
+            onclick="currentSlide(10)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/normal/11.jpg"
+            style="width:100%"
+            onclick="currentSlide(11)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/normal/12.jpg"
+            style="width:100%"
+            onclick="currentSlide(12)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/normal/13.jpg"
+            style="width:100%"
+            onclick="currentSlide(13)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/normal/14.jpg"
+            style="width:100%"
+            onclick="currentSlide(14)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/normal/15.jpg"
+            style="width:100%"
+            onclick="currentSlide(15)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-126.jpg"
+            style="width:100%"
+            onclick="currentSlide(15)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-186.jpg"
+            style="width:100%"
+            onclick="currentSlide(15)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-187.jpg"
+            style="width:100%"
+            onclick="currentSlide(15)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-196.jpg"
+            style="width:100%"
+            onclick="currentSlide(15)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-199.jpg"
+            style="width:100%"
+            onclick="currentSlide(15)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-200.jpg"
+            style="width:100%"
+            onclick="currentSlide(15)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-208.jpg"
+            style="width:100%"
+            onclick="currentSlide(15)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-323.jpg"
+            style="width:100%"
+            onclick="currentSlide(15)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-324.jpg"
+            style="width:100%"
+            onclick="currentSlide(15)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-325.jpg"
+            style="width:100%"
+            onclick="currentSlide(15)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-332.jpg"
+            style="width:100%"
+            onclick="currentSlide(15)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-437.jpg"
+            style="width:100%"
+            onclick="currentSlide(15)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-459.jpg"
+            style="width:100%"
+            onclick="currentSlide(15)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-502.jpg"
+            style="width:100%"
+            onclick="currentSlide(15)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-530.jpg"
+            style="width:100%"
+            onclick="currentSlide(15)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-535 (1).jpg"
+            style="width:100%"
+            onclick="currentSlide(15)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-547.jpg"
+            style="width:100%"
+            onclick="currentSlide(15)"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-555.jpg"
+            style="width:100%"
             onclick="currentSlide(15)"
           />
         </div>
       </div>
     </div>
+
+    <footer class="footer u-margin-top-xl">
+
+      <div class="row">
+          <div class="col-1-of-3" id='footer__start'>
+              <div class="footer__navigation">
+                  <ul class="footer__list">
+                      <li class="footer__item"><a href="https://www.ens-az.com/" class="footer__link">Company</a></li>
+                      <li class="footer__item"><a href="#" id='contact' class="footer__link btn--contact">Contact us</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-1-of-3" id='footer__middle'>
+            <ul>
+              <li class='footer__icon'><a href="https://www.facebook.com/venue8600/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li class='footer__icon'><a href="https://www.yelp.com/biz/venue-8600-scottsdale" target="_blank"><i class="fab fa-yelp"></i></a></li>
+              <li class='footer__icon'><a href="https://www.google.com/maps/place/3633+N+55th+Pl,+Mesa,+AZ+85215/@33.4816949,-111.7124397,17z/data=!4m13!1m7!3m6!1s0x872ba4f7027ea9ed:0xe26065de3b01e0a5!2s3633+N+55th+Pl,+Mesa,+AZ+85215!3b1!8m2!3d33.4816949!4d-111.710251!3m4!1s0x872ba4f7027ea9ed:0xe26065de3b01e0a5!8m2!3d33.4816949!4d-111.710251" target="_blank"><i class="fas fa-map"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-1-of-3" id='footer__end'>
+              <p class="footer__copyright">
+                  The View at 55th 
+                  <br>
+                  <a href='tel:4805051111'>Call us at: (480)505-1111</a>
+                  <br>
+                  Or email us at: thevenue@ens.com
+              </p>
+          </div>
+      </div>
+      </footer>
+      <!--
+        this will be the arrow which will scroll the user to the top of the screen
+      -->
+      <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+      <script src="assets/js/main.js"></script>
 
     <script src="./assets/js/gallery.js"></script>
   </body>

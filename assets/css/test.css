@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster+Two");
 body {
   margin: 0;
-  background: #222;
+  /* background: #222; */
   font-family: "Work Sans", sans-serif;
   font-weight: 800;
 }
@@ -12,6 +12,7 @@ body {
   margin: 0 auto;
   display: grid;
   /* grid-template-rows: 10% 80%; */
+  table-layout: fixed;
 }
 
 header {
@@ -25,6 +26,17 @@ header::after {
   clear: both;
 }
 
+.size__control {
+  width: 94.2%;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 .logo {
   float: left;
   /* padding: 25px 0; */
@@ -32,6 +44,10 @@ header::after {
 
 nav {
   float: right;
+}
+
+.nav_container {
+  grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
 nav ul {
@@ -46,7 +62,6 @@ nav li {
   /* padding-top: 20px; */
   position: relative;
 }
-
 
 nav a {
   color: #444;
@@ -68,7 +83,7 @@ nav a::before {
 
   position: absolute;
   bottom: -5px;
-  left:0;
+  left: 0;
   width: 0%;
 
   transition: all ease-in-out 250ms;
@@ -81,6 +96,7 @@ nav a:hover::before {
 .name {
   display: grid;
   float: left;
+  margin-left: 20px;
   font-family: "Lobster Two", cursive;
   font-size: 20px;
   color: whitesmoke;
@@ -88,8 +104,9 @@ nav a:hover::before {
 
 .nav-tabs {
   border-bottom: none;
+  display: table-cell;
+  text-align: center;
 }
-
 
 /* Hide the images by default */
 .mySlides {
@@ -173,9 +190,18 @@ nav a:hover::before {
   background-color: aqua;
 }
 
+/* .row {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+} */
+
 .column img {
-  height:100px;
-  width:100px;
-  float:left;
+  height: 100px;
+  width: 100px;
+  float: left;
+  width: 100%;
 }
 
+.column {
+  margin-left: auto;
+  margin-right: auto;
+}

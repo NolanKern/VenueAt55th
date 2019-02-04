@@ -29,34 +29,149 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/test.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    
   </head>
   <body>
     <main>
+      <div class="navigation">
+        <header class='size__control'>
+          <div class="container">
+            <!-- <h1 class="logo"></h1> -->
+            <div class="name">The View At 55th</div>
+            <div class="nav_container">
+              <nav>
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="./index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" ondblclick='redirect()' data-toggle="tab" href="#menu1">Weddings</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" ondblclick='redirect()'  data-toggle="tab" href="#menu2"
+                      >Receptions</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" ondblclick='redirect()'  data-toggle="tab" href="#menu3"
+                      >Corporate Events</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" ondblclick='redirect()'  data-toggle="tab" href="#menu5"
+                      >Amenities</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" ondblclick='redirect()'  data-toggle="tab" href="#menu4"
+                      >Corporate Training</a
+                    >
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" ondblclick='redirect()'  data-toggle="tab" href="#menu6"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <div class="tab-content u-margin-bottom-small size__control">
+          <div class="tab-pane container size-control" id="home" style="color:aliceblue;">
+            <!-- Thumbnail images -->
+            <div class="row">
+              <div class="column">
+                <img
+                  class="democursor"
+                  src="./assets/img/normal/1.jpg"
+                  alt="The Woods"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="democursor"
+                  src="./assets/img/normal/1.jpg"
+                  alt="Cinque Terre"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="democursor"
+                  src="./assets/img/normal/1.jpg"
+                  alt="Mountains and fjords"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="democursor"
+                  src="./assets/img/normal/1.jpg"
+                  alt="Northern Lights"
+                />
+              </div>
 
-        <div class="navigation">
-            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            </div>
+          </div>
+          <div class="tab-pane container fade" id="menu1">
+            <div class="row">
+              <div class="column">
+                <img
+                  class="democursor"
+                  src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-555.jpg"
+                  alt="The Woods"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="democursor"
+                  src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-196.jpg"
+                  alt="Cinque Terre"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="democursor"
+                  src="./assets/img/Wedding Photos/KBPhotography_OchoaWedding-186.jpg"
+                  alt="Mountains and fjords"
+                />
+              </div>
+              <div class="column">
+                <img
+                  class="democursor"
+                  src="./assets/img/normal/11.jpg"
+                  alt="Northern Lights"
+                />
+              </div>
 
-            <label for="navi-toggle" class="navigation__button">
-                <span class="navigation__icon">&nbsp;</span>
-            </label>
-
-            <div class="navigation__background">&nbsp;</div>
-
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a href="./index.html" class="navigation__link"><span>01</span>Home</a></li>
-                    <li class="navigation__item"><a href="./gallery.html" class="navigation__link"><span>02</span>Photo Gallery</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Features</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Testamonials</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Contact Us</a></li>
-                    </ul>
-            </nav>
+            </div>
+          </div>
+          <div class="tab-pane container fade" id="menu2">...</div>
+          <div class="tab-pane container fade" id="menu3">...</div>
+          <div class="tab-pane container fade" id="menu4">...</div>
+          <div class="tab-pane container fade" id="menu5">...</div>
+          <div class="tab-pane container fade" id="menu6">...</div>
         </div>
+      </div>
+      </div>
+  
+        
+      
+        
 
-        <header class="header">
+        <header class="header u-margin-top-xl">
             
             <div class="header__text-box">
                 <h1 class="heading-primary">
@@ -68,12 +183,12 @@
                 <!-- <a href="gallery.html" class="btn btn--white btn--animated">Learn more &rArr;</a> -->
             </div>
               <div class="header__btn--align">
-                    <a href="gallery.html" class="btn btn--white btn--animated">Learn more &rArr;</a>
+                    <a href="gallery.html" class="btn btn--white btn--animated">See more &rArr;</a>
               </div>
         </header>
 
       <section class="section-about">
-        <div class="u-center-text u-margin-bottom-big">
+        <div class="u-center-text u-margin-bottom-small">
           <h2 class="heading-secondary">We provide the space for your masterpiece</h2>
           <div class="row" id='window_view'>
             <div class="col-1-of-2" id='heading_1'>Commitment to exellence</div>
@@ -83,7 +198,7 @@
         </div>
       </section>
 
-      <section class="section-events">
+      <!-- <section class="section-events">
         <div class="row">
           <div class="col-1-of-2" id='wedding'><h1 class ='events_text'>Weddings</h1>
           <p class='events-paragraph'>The Venue At 55th offers an elegant and contemporary space for the<br> wedding of your dreams.</p></div>
@@ -96,7 +211,7 @@
           <div class="col-1-of-2" id='social'><h1 class ='events_text'>Social Gatherings</h1>
             <p class='events-paragraph'>We welcome any type of social gathering. With our gorgeous space<br> we will help you acheive your vision.</p></div>
         </div>
-      </section>
+      </section> -->
 
 
       <section class='section-features'>
@@ -132,14 +247,6 @@
                           </ul>
                       </div>
                  </div>
-                 <div class="card__side card__side--back card__side--back-1">
-                      <div class="card__cta">
-                          <div class="card__price-box">
-                              <p class="card__price-value">Contact us for more information!</p>
-                          </div>
-                          <a href="#popup" class="btn btn--white btn--contact">Contact Us!</a>
-                      </div>
-                  </div>
              </div>
           </div>
 
@@ -168,20 +275,12 @@
                       </div>
 
                   </div>
-                  <div class="card__side card__side--back card__side--back-2">
-                    <div class="card__cta">
-                      <div class="card__price-box">
-                          <p class="card__price-value">Contact us for more information!</p>
-                      </div>
-                      <a href="#popup" class="btn btn--white btn--contact">Contact Us!</a>
-                  </div>
-                  </div>
               </div>
           </div>
         </div>
       </section>
 
-      <section class="section-stories">
+      <section class="section-stories u-margin-top-big">
         <!--
           Get some testamonies from people who have used event ex. Anne and Larry
         -->
@@ -197,6 +296,7 @@
                 <img src="assets/img/larry.jpg" alt="Person on a tour" class="story__img">
               <figcaption class='story__caption'>Potthoff</figcaption>
             </figure>
+            
             <div class="story__text">
               <h3 class='heading-tertiary u-margin-bottom-small'>My industry meeting was a huge success!</h3>
               <p>
@@ -245,30 +345,28 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__logo-box">
-        <!-- <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo"> -->
-    </div>
+
     <div class="row">
-        <div class="col-1-of-3">
+        <div class="col-1-of-3" id='footer__start'>
             <div class="footer__navigation">
                 <ul class="footer__list">
                     <li class="footer__item"><a href="https://www.ens-az.com/" class="footer__link">Company</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link btn--contact">Contact us</a></li>
+                    <li class="footer__item"><a href="#" id='contact' class="footer__link btn--contact">Contact us</a></li>
                 </ul>
             </div>
         </div>
-        <div class="col-1-of-3">
+        <div class="col-1-of-3" id='footer__middle'>
           <ul>
             <li class='footer__icon'><a href="https://www.facebook.com/venue8600/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
             <li class='footer__icon'><a href="https://www.yelp.com/biz/venue-8600-scottsdale" target="_blank"><i class="fab fa-yelp"></i></a></li>
             <li class='footer__icon'><a href="https://www.google.com/maps/place/3633+N+55th+Pl,+Mesa,+AZ+85215/@33.4816949,-111.7124397,17z/data=!4m13!1m7!3m6!1s0x872ba4f7027ea9ed:0xe26065de3b01e0a5!2s3633+N+55th+Pl,+Mesa,+AZ+85215!3b1!8m2!3d33.4816949!4d-111.710251!3m4!1s0x872ba4f7027ea9ed:0xe26065de3b01e0a5!8m2!3d33.4816949!4d-111.710251" target="_blank"><i class="fas fa-map"></i></a></li>
           </ul>
         </div>
-        <div class="col-1-of-3">
+        <div class="col-1-of-3" id='footer__end'>
             <p class="footer__copyright">
                 The View at 55th 
                 <br>
-                Call us at: (480)505-1111 
+                <a href='tel:4805051111'>Call us at: (480)505-1111</a>
                 <br>
                 Or email us at: thevenue@ens.com
             </p>

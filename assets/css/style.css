@@ -1,3 +1,20 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Roboto");
 @import url("https://fonts.googleapis.com/css?family=Lobster");
 @keyframes moveInLeft {
@@ -197,6 +214,9 @@ sup {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.u-margin-top-xl {
+  margin-top: 15rem !important; }
+
 #next-btn {
   position: absolute;
   right: 20px;
@@ -308,6 +328,7 @@ sup {
   transform: translateY(0); }
 
 #back2Top {
+  margin-right: 20px;
   width: 40px;
   line-height: 40px;
   overflow: hidden;
@@ -335,7 +356,6 @@ sup {
 #form-box {
   background: #fff;
   position: relative;
-  width: 600px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.1), 0 6px 10px 5px rgba(0, 0, 0, 0.1), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
@@ -467,7 +487,7 @@ sup {
   position: relative;
   height: 75rem; }
   .card__side {
-    height: 72rem;
+    height: 75rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -479,18 +499,6 @@ sup {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card__side--front {
       background-color: #fff; }
-    .card__side--back {
-      transform: rotateY(180deg); }
-      .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
-      .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
-      .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
-  .card:hover .card__side--front {
-    transform: rotateY(-180deg); }
-  .card:hover .card__side--back {
-    transform: rotateY(0); }
   .card__picture {
     background-size: cover;
     height: 23rem;
@@ -521,8 +529,6 @@ sup {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
     .card__heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
-    .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
   .card__details {
     padding: 3rem; }
     .card__details ul {
@@ -553,26 +559,63 @@ sup {
     font-size: 6rem;
     font-weight: 100; }
 
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  height: auto;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  __side {
+    height: auto;
+    position: relative;
+    box-shadow: none; }
+    __side--back {
+      transform: rotateY(0);
+      clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); }
+  :hover __side--front {
+    transform: rotateY(0); }
+  __details {
+    padding: 1rem 3rem; }
+  __cta {
+    position: relative;
+    top: 0%;
+    left: 0;
+    transform: translate(0);
+    width: 100%;
+    padding: 7rem 4rem 4rem 4rem; }
+  __price-box {
+    margin-bottom: 3rem; }
+  __price-value {
+    font-size: 4rem; } }
+
 .footer {
   background-color: #333;
+  padding: 10rem 0;
   font-size: 1.4rem;
   color: #f7f7f7; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__logo-box {
+        margin-bottom: 6rem; } }
   .footer__logo {
     width: 15rem;
     height: auto; }
   .footer__navigation {
     border-top: 1px solid #777;
-    padding-top: 1rem;
+    padding-top: 2rem;
     display: inline-block; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%;
+        text-align: center; } }
   .footer__list {
     list-style: none; }
   .footer__item {
     display: inline-block; }
-    .footer__item:first-child {
-      margin-left: 1.5rem; }
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
   .footer__link:link, .footer__link:visited {
@@ -588,9 +631,22 @@ sup {
     transform: rotate(5deg) scale(1.3); }
   .footer__copyright {
     border-top: 1px solid #777;
-    padding: .5rem 2rem;
+    padding-top: 2rem;
     width: 80%;
     float: right; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        float: none; } }
+  .footer__icon {
+    list-style: none; }
+
+#footer__middle {
+  margin-right: 6rem; }
+
+#footer__start {
+  margin-right: -15px;
+  margin-left: 10px; }
 
 .row {
   max-width: 114rem;
@@ -643,6 +699,9 @@ sup {
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%); }
+
+.column img:not(:last-child) {
+  margin-right: 50px; }
 
 #window_view {
   background-image: url(../img/normal/11.jpg);
@@ -804,8 +863,50 @@ sup {
   background-size: cover; }
 
 .section-book {
-  height: 100vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: top;
   align-items: center; }
+
+@media all {
+  #form-box {
+    width: 600px !important; } }
+
+@media all and (max-width: 980px) {
+  .heading-primary--main:not(:last-child) {
+    font-size: 5rem; }
+  #form-box {
+    width: 600px !important; } }
+
+@media all and (max-width: 736px) {
+  .heading-primary--main:not(:last-child) {
+    font-size: 4rem; }
+  #form-box {
+    width: 600px !important; }
+  .size__control {
+    width: 91.5%; }
+  .card__side--front {
+    height: 78rem; } }
+
+@media all and (max-width: 480px) {
+  .heading-primary--main:not(:last-child) {
+    font-size: 4rem; }
+  #form-box {
+    width: 300px !important; }
+  .size__control {
+    width: 87.5%; }
+  .row .col-1-of-2 {
+    width: 100%;
+    display: block;
+    margin: 4rem 0; }
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 0; }
+  .nav-tabs .nav-link {
+    font-size: 1.1rem; }
+  .card__side {
+    height: 72rem; }
+  .card {
+    height: 72rem; }
+  .heading-tertiary {
+    margin-top: 150px; } }
