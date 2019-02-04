@@ -236,6 +236,15 @@ $(".btn--contact").click(function() {
   );
 });
 
+$('.btn--amenities').click(()=>{
+  $([document.documentElement, document.body]).animate(
+    {
+      scrollTop: $(".section-features").offset().top
+    },
+    2000
+  );
+});
+
 
 function toggle() {
   event.preventDefault();
