@@ -19,10 +19,11 @@ body {
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
-    color: skyblue;
+    color: $color-grey-dark;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+    font-family: 'Lobster', cursive
 
     /*
         animation-delay: 3s;
@@ -162,4 +163,8 @@ sup {
   transition: 0.8s ease-in-out;
   font-family: 'Lobster', cursive;
   font-size: 2.4rem;
+}
+
+.name{
+  font-size: 2.5rem;
 }
