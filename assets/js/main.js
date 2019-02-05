@@ -418,3 +418,7 @@ function toggle() {
 function redirect() {
   window.location.replace('../../gallery.html');
 }
+
+$('#tester').tooltip( {
+  content: '<img src="../img/Wedding Photos/KBPhotography_OchoaWedding-126.jpg" style="height:500px; width:500px;" />'
+});
