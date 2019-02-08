@@ -587,14 +587,6 @@ sup {
   __price-value {
     font-size: 4rem; } }
 
-.democusor:hover {
-  display: inline;
-  position: absolute;
-  border: 2px solid #fff;
-  color: #EEE;
-  background: #333;
-  background-image: url("../img/normal/1.jpg"); }
-
 .footer {
   background-color: #333;
   padding: 10rem 0;
@@ -710,6 +702,15 @@ sup {
 
 .column img:not(:last-child) {
   margin-right: 50px; }
+
+.column img .pic1:hover:after {
+  content: "";
+  background-image: url("../img/normal/1.jpg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 273px;
+  height: 274px; }
 
 #window_view {
   background-image: url(../img/normal/11.jpg);

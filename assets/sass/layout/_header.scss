@@ -38,3 +38,13 @@
 .column img:not(:last-child) {
   margin-right: 50px;
 }
+
+.column img .pic1:hover:after {
+  content:"";
+    background-image: url('../img/normal/1.jpg');
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 273px;
+    height: 274px;
+}

@@ -422,3 +422,111 @@ function redirect() {
 $('#tester').tooltip( {
   content: '<img src="../img/Wedding Photos/KBPhotography_OchoaWedding-126.jpg" style="height:500px; width:500px;" />'
 });
+
+$(document).ready(function(){
+  $('.pic1').tooltip({title: "<img style='height:250px; width:300px;' src='./assets/img/Wedding Photos/KBPhotography_OchoaWedding-437.jpg' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.pic2').tooltip({title: "<img style='height:250px; width:300px;' src='./assets/img/Wedding Photos/KBPhotography_OchoaWedding-196.jpg' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.pic3').tooltip({title: "<img style='height:250px; width:300px;' src='./assets/img/Wedding Photos/KBPhotography_OchoaWedding-186.jpg' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.pic4').tooltip({title: "<img style='height:250px; width:300px;' src='./assets/img/Wedding Photos/KBPhotography_OchoaWedding-530.jpg' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.pic5').tooltip({title: "<img style='height:250px; width:300px;' src='./assets/img/Wedding Photos/KBPhotography_OchoaWedding-332.jpg' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.pic6').tooltip({title: "<img style='height:250px; width:300px;' src='./assets/img/Wedding Photos/KBPhotography_OchoaWedding-325.jpg' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.pic7').tooltip({title: "<img style='height:250px; width:300px;' src='./assets/img/Wedding Photos/KBPhotography_OchoaWedding-555.jpg' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.pic8').tooltip({title: "<img style='height:250px; width:300px;' src='./assets/img/Wedding Photos/KBPhotography_OchoaWedding-530.jpg' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.pic9').tooltip({title: "<img style='height:250px; width:300px;' src='./assets/img/ens_event/main_ens.jpg' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.pic10').tooltip({title: "<img style='height:250px; width:300px;' src='./assets/img/ens_event/img_2429.jpg' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.pic11').tooltip({title: "<img style='height:250px; width:300px;' src='./assets/img/ens_event/img_2431.jpg' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.pic12').tooltip({title: "<img style='height:250px; width:300px;' src='./assets/img/ens_event/img_2430.jpg' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.pic13').tooltip({title: "<img style='height:250px; width:300px;' src='./assets/img/ens_event/main_ens.jpg' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.pic14').tooltip({title: "<img style='height:250px; width:300px;' src='./assets/img/ens_event/img_2429.jpg' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.pic15').tooltip({title: "<img style='height:250px; width:300px;' src='./assets/img/ens_event/img_2431.jpg' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.pic16').tooltip({title: "<img style='height:250px; width:300px;' src='./assets/img/ens_event/img_2430.jpg' />", html: true, placement: "bottom"}); 
+});
+
+
+$(document).ready(function(){
+  $('.card__pic1').tooltip({title: "<img style='height:250px; width:300px;' src='./assets/img/Wedding Photos/KBPhotography_OchoaWedding-325.jpg' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.card__pic2').tooltip({title: "<img style='height:250px; width:300px;' src='' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.card__pic3').tooltip({title: "<img style='height:250px; width:300px;' src='' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.card__pic4').tooltip({title: "<img style='height:250px; width:300px;' src='./assets/img/glass.jpg' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.card__pic5').tooltip({title: "<img style='height:250px; width:300px;' src='' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.card__pic6').tooltip({title: "<img style='height:250px; width:300px;' src='' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.card__pic7').tooltip({title: "<img style='height:250px; width:300px;' src='' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.card__pic8').tooltip({title: "<img style='height:250px; width:300px;' src='' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.card__pic9').tooltip({title: "<img style='height:250px; width:300px;' src='' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.card__pic10').tooltip({title: "<img style='height:250px; width:300px;' src='' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.card__pic11').tooltip({title: "<img style='height:250px; width:300px;' src='' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.card__pic12').tooltip({title: "<img style='height:250px; width:300px;' src='' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.card__pic13').tooltip({title: "<img style='height:250px; width:300px;' src='' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.card__pic14').tooltip({title: "<img style='height:250px; width:300px;' src='' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.card__pic15').tooltip({title: "<img style='height:250px; width:300px;' src='' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.card__pic16').tooltip({title: "<img style='height:250px; width:300px;' src='' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.card__pic17').tooltip({title: "<img style='height:250px; width:300px;' src='' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.card__pic18').tooltip({title: "<img style='height:250px; width:300px;' src='' />", html: true, placement: "bottom"}); 
+});
+$(document).ready(function(){
+  $('.card__pic19').tooltip({title: "<img style='height:250px; width:300px;' src='' />", html: true, placement: "bottom"}); 
+});
